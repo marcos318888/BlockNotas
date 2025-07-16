@@ -64,7 +64,6 @@ src/
 - `npx webpack --config webpack.config.js`: Compila el proyecto y genera el bundle.
 
 ## Autor
-- marcos318888
+- Marcos Bazan
 
-## Licencia
-MIT
+
