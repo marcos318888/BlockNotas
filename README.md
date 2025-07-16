@@ -26,7 +26,6 @@ public/
   index.html
   style.css
   assets/
-    corcho.jpg
 src/
   main.ts
   clases/
