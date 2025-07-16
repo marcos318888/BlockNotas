@@ -21,4 +21,7 @@ export class Notas {
         this.isComplete = isComplete;
     }
 
+    getLength() {
+        return this.title.length;
+    }
 }
