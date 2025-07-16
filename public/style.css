@@ -1,39 +1,115 @@
 body {
     margin: 0;
-    background-color: cyan;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    min-height: 100vh;
 }
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+
 .header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 24px 0 16px 0;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
 .page-name {
     margin: 0;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
+
+.note-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.note-title {
+    flex: 1;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+.note-title:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
 .btn {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px rgba(76,175,80,0.08);
 }
 .btn:hover {
     background-color: #45a049;
+    box-shadow: 0 4px 12px rgba(76,175,80,0.15);
 }
+
+.create-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.create-btn:hover {
+    background: #45a049;
+    box-shadow: 0 4px 16px rgba(76,175,80,0.25);
+}
+
 .notes-list {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
-.notes-list li {
-    background-color: #f9f9f9;
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
+.note-item {
+    background-color: #fff;
+    margin: 8px 0;
+    padding: 14px 16px;
+    border-radius: 7px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    transition: box-shadow 0.2s;
+}
+.note-item:hover {
+    box-shadow: 0 4px 16px rgba(76,175,80,0.08);
+}
+.delete-btn {
+    background: none;
+    color: #e74c3c;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.delete-btn:hover {
+    background: #ffeaea;
 }

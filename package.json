@@ -6,9 +6,13 @@
     "test": "jest"
   },
   "jest": {
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ],
     "transform": {
       "\\.[jt]sx?$": "babel-jest"
-    }
+    },
+    "testEnvironment": "jsdom"
   },
   "author": "",
   "license": "ISC",
@@ -24,7 +28,9 @@
     "@types/jest": "^30.0.0",
     "babel-loader": "^8.2.2",
     "jest": "^30.0.4",
+    "jest-environment-jsdom": "^30.0.4",
     "ts-jest": "^29.1.0",
+    "ts-loader": "^9.5.2",
     "typescript": "^4.5.4",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.7.0"

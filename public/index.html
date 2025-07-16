@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="bundle.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bundle.js"></script>
+    <title>BlockNotas - App de Notas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: 'Roboto', Arial, sans-serif;">
     <header class="header">
-        <h1 class="page-name">App de Notas</h1>
+        <h1 class="page-name">📝 BlockNotas</h1>
     </header>
-    <main>
-        <ul class="notes-list">
-            <li class="form-item">
-                <form action="note-form">
-                    <input type="text"
-                        class="note-title"
-                        placeholder="Nueva Nota"
-                        name="nueva-nota" 
-                        />
-                </form>
-            </li>
+    <main style="max-width: 500px; margin: 30px auto;">
+        <section style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 20px;">
+            <form class="note-form" autocomplete="off" style="display: flex; gap: 10px;">
+                <input type="text" class="note-title" placeholder="Escribe una nota..." name="nueva-nota" style="flex:1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
+                <button type="submit" class="btn" style="border-radius: 5px; font-size: 18px;">Agregar</button>
+            </form>
+            <ul class="notes-list" style="margin-top: 20px;">
+                <!-- Las notas se mostrarán aquí -->
+            </ul>
+        </section>
     </main>
-    <button class="create-btn">+</button>
 </body>
 </html>
